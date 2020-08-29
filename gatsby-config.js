@@ -1,24 +1,24 @@
 module.exports = {
-  pathPrefix: "/gatsby-theme-polaroid",
+  pathPrefix: "/deep-web",
 
   // TODO - Update site metadata to reflect your site's info
   siteMetadata: {
     // Used for the title template on pages other than the index site
-    siteTitle: `Polaroid`,
+    siteTitle: `Deep Sheth`,
     // Default title of the page
-    siteTitleAlt: `Polaroid @shetharp/gatsby-theme-polaroid`,
+    siteTitleAlt: `Deep Sheth`,
     // Can be used for e.g. JSONLD
-    siteHeadline: `Polaroid Gatsby Theme by Arpit Sheth`,
+    siteHeadline: `Deep Sheth`,
     // Will be used to generate absolute URLs for og:image etc.
-    siteUrl: `https://shetharp.github.io/gatsby-theme-polaroid/`,
+    siteUrl: `https://deepsheth.com/`,
     // Used for SEO
-    siteDescription: `Polaroid is a photography-focused Gatsby theme for building portfolio websites. It supports an MDX blog with tags/categories, syntax-highlighted code blocks, Theme UI for dark mode, and Typescript. Designed & developed by Arpit Sheth.`,
+    siteDescription: `Building the future of fintech.`,
     // Will be set on the <html /> tag
     siteLanguage: `en`,
     // Used for og:image and must be placed inside the `static` folder
     siteImage: `/banner.png`,
     // Twitter Handle
-    author: `@shetharp`,
+    author: `@itdeepends`,
   },
   plugins: [
     {
@@ -36,16 +36,16 @@ module.exports = {
       // TODO - Update manifest options for your site
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Polaroid @shetharp/gatsby-theme-polaroid`,
-        short_name: `polaroid-theme`,
-        description: `Polaroid Gatsby Theme by Arpit Sheth`,
+        name: `Deep Sheth`,
+        short_name: `deep-web`,
+        description: `Building the future of fintech.`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
         display: `standalone`,
         icons: [
           {
-            src: `/favicon.png`,
+            src: `/favicon-192.png`,
             sizes: `192x192`,
             type: `image/png`,
           },
