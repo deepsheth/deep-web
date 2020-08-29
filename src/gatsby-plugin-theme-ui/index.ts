@@ -1,6 +1,7 @@
 import { merge } from "theme-ui";
 import { themePolaroid, ThemePolaroid } from "@shetharp/gatsby-theme-polaroid";
-import "typeface-dm-sans";
+import "typeface-fira-sans";
+import "typeface-fira-code";
 
 /**
  * The fonts for this site.
@@ -13,9 +14,9 @@ import "typeface-dm-sans";
  */
 const fonts: ThemePolaroid["fonts"] = {
   body:
-    '"DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
-  heading: '"DM Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
-  monospace: '"DM Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+    '"Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+  heading: `'ff-chambers-sans-web', 'Bahnschrift', 'Roboto', 'Segoe UI', 'San Francisco', 'Helvetica Neue', sans-serif`,
+  monospace: '"Fira Code", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
 };
 
 /**
