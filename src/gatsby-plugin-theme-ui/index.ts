@@ -30,7 +30,7 @@ export const themeSite = merge(themePolaroid, {
   fontWeights: {
     body: 300,
     bold: 500,
-    heading: 500,
+    heading: 700,
   },
 });
 export default themeSite;
