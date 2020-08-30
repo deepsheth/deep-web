@@ -20,12 +20,21 @@ const fonts: ThemePolaroid["fonts"] = {
 };
 
 /**
+ * The colors for this site.
+ */
+const colors: ThemePolaroid["colors"] = {
+  primary: themePolaroid.colors.saffron.base,
+  secondary: themePolaroid.colors.azure.base,
+};
+
+/**
  * The theme overrides for this site.
  *
  * https://theme-ui.com/packages/gatsby-theme-ui-blog/#theming
  * https://theme-ui.com/guides/merging-themes/
  */
 export const themeSite = merge(themePolaroid, {
+  colors,
   fonts,
   fontWeights: {
     body: 300,
