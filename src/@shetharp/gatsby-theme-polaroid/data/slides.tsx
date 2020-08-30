@@ -30,16 +30,16 @@ const Slides: React.FC<SlidesProps> = (props) => {
    */
   const slideImages = useStaticQuery(graphql`
     query {
-      imgIntro: file(relativePath: { eq: "polaroid-bg-textured.jpg" }) {
+      imgIntro: file(relativePath: { eq: "intro-deep-sheth.jpg" }) {
         ...slideImageFragment
       }
       imgPreview: file(relativePath: { eq: "kite-festival-1.jpg" }) {
         ...slideImageFragment
       }
-      imgWork: file(relativePath: { eq: "kite-festival-2.jpg" }) {
+      imgWork: file(relativePath: { eq: "fidelity.jpg" }) {
         ...slideImageFragment
       }
-      imgProject: file(relativePath: { eq: "kite-festival-3.jpg" }) {
+      imgProject: file(relativePath: { eq: "lehigh.jpg" }) {
         ...slideImageFragment
       }
     }
@@ -52,22 +52,20 @@ const Slides: React.FC<SlidesProps> = (props) => {
        */}
       <Slide
         id="intro"
-        title="Smile for the camera! And say hello to Polaroid."
+        title="I’m a full-stack engineer developing greenfield innovations in the fintech industry."
         description={
           <React.Fragment>
             <p>
-              Polaroid is a <em>photography-focused</em> Gatsby theme for building portfolio websites. It supports an
-              MDX blog with tags/categories, syntax-highlighted code blocks, Theme UI for dark mode, and Typescript.
-            </p>
-            <p>
-              Designed &amp; developed by <a href="https://arpitsheth.com">Arpit Sheth</a>.
+                I work on the Growth team at Bread as a Software Engineer.
+                Previously, I was on the innovation team at Fidelity.
+                I graduated from Lehigh University's Computer Science and Business program and spent some time interning at Deloitte.
             </p>
           </React.Fragment>
         }
         fluid={slideImages.imgIntro.childImageSharp.fluid}
-        overlayColor="veronica.dark"
+        overlayColor="saffron.dark"
         highlightColor="primary"
-        isColorful
+        imagePosition="70% 20%"
         isBorderless
         hasScrollIndicator
       />
