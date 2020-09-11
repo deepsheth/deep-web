@@ -33,13 +33,19 @@ const Slides: React.FC<SlidesProps> = (props) => {
       imgIntro: file(relativePath: { eq: "intro-deep-sheth.jpg" }) {
         ...slideImageFragment
       }
-      imgPreview: file(relativePath: { eq: "kite-festival-1.jpg" }) {
+      imgParapet: file(relativePath: { eq: "parapet.jpg" }) {
         ...slideImageFragment
       }
-      imgWork: file(relativePath: { eq: "fidelity.jpg" }) {
+      imgBread: file(relativePath: { eq: "bread.jpg" }) {
+        ...slideImageFragment
+      },
+      imgFidelity: file(relativePath: { eq: "fidelity.jpg" }) {
         ...slideImageFragment
       }
-      imgProject: file(relativePath: { eq: "lehigh.jpg" }) {
+      imgLehigh: file(relativePath: { eq: "lehigh.jpg" }) {
+        ...slideImageFragment
+      }
+      imgDots: file(relativePath: { eq: "dots.jpg" }) {
         ...slideImageFragment
       }
     }
@@ -70,12 +76,57 @@ const Slides: React.FC<SlidesProps> = (props) => {
         hasScrollIndicator
       />
 
-      {/**
-       * PREVIEW
+
+        {/**
+         * WORK
+         */}
+        {/* Photo by Mark Konig
+          Unsplash: https://unsplash.com/photos/Tl8mDaue_II */}
+        <Slide
+            id="work-bread"
+            title="Bread"
+            description={
+                <React.Fragment>
+                    I went down yesterday to the <a href="#!">Piraeus with Glaucon</a> the son of Ariston, that I might offer up
+                    my prayers to the goddess (Bendis, the <Link to="#">Thracian Artemis.</Link>); and also because{" "}
+                    <em>I wanted to see</em> in what manner they would celebrate the festival, which was a new thing.
+                </React.Fragment>
+            }
+            fluid={slideImages.imgBread.childImageSharp.fluid}
+            overlayColor="lavender.base"
+            highlightColor="lavender.base"
+            isExpanded
+            imagePosition="50% 50%"
+            button={{ text: "Get started", href: "/readme" }}
+        />
+
+        <Slide
+            id="work-fidelity"
+            title="Fidelity"
+            description={
+                <React.Fragment>
+                    I went down yesterday to the <a href="#!">Piraeus with Glaucon</a> the son of Ariston, that I might offer up
+                    my prayers to the goddess (Bendis, the <Link to="#">Thracian Artemis.</Link>); and also because{" "}
+                    <em>I wanted to see</em> in what manner they would celebrate the festival, which was a new thing.
+                </React.Fragment>
+            }
+            fluid={slideImages.imgFidelity.childImageSharp.fluid}
+            overlayColor="lime.dark"
+            highlightColor="aloe.base"
+            isExpanded
+            isColorful
+            imagePosition="50% 50%"
+            button={{ text: "Get started", href: "/readme" }}
+        />
+
+        {/**
+       * PROJECT
        */}
+        { /* Photo credit: Jacob Ehnmark
+            Flickr: https://flic.kr/p/jUbvK*/ }
       <Slide
-        id="preview"
-        title="A picture is worth  a thousand words. A demo is a million more."
+        id="parapet"
+        title="I built a database to discover vacant apartments in Jersey City"
         description={
           <React.Fragment>
             <p>
@@ -88,40 +139,19 @@ const Slides: React.FC<SlidesProps> = (props) => {
             </p>
           </React.Fragment>
         }
-        fluid={slideImages.imgPreview.childImageSharp.fluid}
-        overlayColor="primary"
-        highlightColor="accent"
-        isExpanded
-        imagePosition="0% 0%"
+        fluid={slideImages.imgParapet.childImageSharp.fluid}
+        overlayColor="crystal.dark"
+        highlightColor="crystal.base"
+        isExpanded={false}
+        imagePosition="80% 0%"
         button={{ text: "Theme Preview", href: "/theme-preview" }}
-      />
-
-      {/**
-       * WORK
-       */}
-      <Slide
-        id="work"
-        title="Savor the moment slowly, for it may slip away too soon."
-        description={
-          <React.Fragment>
-            I went down yesterday to the <a href="#!">Piraeus with Glaucon</a> the son of Ariston, that I might offer up
-            my prayers to the goddess (Bendis, the <Link to="#">Thracian Artemis.</Link>); and also because{" "}
-            <em>I wanted to see</em> in what manner they would celebrate the festival, which was a new thing.
-          </React.Fragment>
-        }
-        fluid={slideImages.imgWork.childImageSharp.fluid}
-        overlayColor="secondary"
-        highlightColor="saffron.dark"
-        isExpanded
-        imagePosition="0% 0%"
-        button={{ text: "Get started", href: "/readme" }}
       />
 
       {/**
        * PROJECT
        */}
       <Slide
-        id="project"
+        id="lehigh"
         title="What if you replaced the noise of becoming with the silence of being?"
         description={
           <React.Fragment>
@@ -131,14 +161,35 @@ const Slides: React.FC<SlidesProps> = (props) => {
             with very little to distress or vex her.
           </React.Fragment>
         }
-        fluid={slideImages.imgProject.childImageSharp.fluid}
-        overlayColor="mediumslateblue"
-        highlightColor="mediumorchid"
+        fluid={slideImages.imgLehigh.childImageSharp.fluid}
+        overlayColor="#855524"
+        highlightColor="#c4731f"
         isColorful
         isExpanded
         hasDistinctBorder
       />
 
+        {/**
+         * PROJECT
+         */}
+        <Slide
+            id="dots"
+            title="What if you replaced the noise of becoming with the silence of being?"
+            description={
+                <React.Fragment>
+                    Emma Woodhouse, handsome, clever, and rich, with a comfortable home and happy disposition, seemed to unite
+                    some of the best <em>blessings of existence</em>; and had lived nearly{" "}
+                    <a href="https://www.gutenberg.org/files/158/158-h/158-h.htm#link2HCH0001">twenty-one years</a> in the world
+                    with very little to distress or vex her.
+                </React.Fragment>
+            }
+            fluid={slideImages.imgDots.childImageSharp.fluid}
+            overlayColor="mango.base"
+            highlightColor="mediumorchid"
+            isExpanded
+            hasDistinctBorder
+        />
+        
       {/**
        * BLOG
        */}
