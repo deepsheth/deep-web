@@ -62,9 +62,9 @@ const Slides: React.FC<SlidesProps> = (props) => {
         description={
           <React.Fragment>
             <p>
-                I work on the Growth team at Bread as a Software Engineer.
-                Previously, I was on the innovation team at Fidelity.
-                I graduated from Lehigh University's Computer Science and Business program and spent some time interning at Deloitte.
+                I work on the Growth team at <a href="#bread">Bread</a> as a Software Engineer.
+                Previously, I was on the innovation team at <a href="#fidelity">Fidelity</a>.
+                I graduated from <a href="#lehigh">Lehigh University's</a> Computer Science and Business program and spent some time interning at Deloitte.
             </p>
           </React.Fragment>
         }
@@ -83,11 +83,11 @@ const Slides: React.FC<SlidesProps> = (props) => {
         {/* Photo by Mark Konig
           Unsplash: https://unsplash.com/photos/Tl8mDaue_II */}
         <Slide
-            id="work-bread"
+            id="bread"
             title="Bread"
             description={
                 <React.Fragment>
-                    I went down yesterday to the <a href="#!">Piraeus with Glaucon</a> the son of Ariston, that I might offer up
+                    I went down yesterday to the <a href="#!">Piraeus with Glaucon</a> the son of Ariston, that I might offer up{" "}
                     my prayers to the goddess (Bendis, the <Link to="#">Thracian Artemis.</Link>); and also because{" "}
                     <em>I wanted to see</em> in what manner they would celebrate the festival, which was a new thing.
                 </React.Fragment>
@@ -96,27 +96,27 @@ const Slides: React.FC<SlidesProps> = (props) => {
             overlayColor="lavender.base"
             highlightColor="lavender.base"
             isExpanded
+            isColorful
             imagePosition="50% 50%"
-            button={{ text: "Get started", href: "/readme" }}
+            button={{ text: "Contact Me", href: "/readme" }}
         />
 
         <Slide
-            id="work-fidelity"
-            title="Fidelity"
+            id="fidelity"
+            title="I developed firm-wide best practices for Fidelity's brokerage technology."
             description={
                 <React.Fragment>
-                    I went down yesterday to the <a href="#!">Piraeus with Glaucon</a> the son of Ariston, that I might offer up
-                    my prayers to the goddess (Bendis, the <Link to="#">Thracian Artemis.</Link>); and also because{" "}
-                    <em>I wanted to see</em> in what manner they would celebrate the festival, which was a new thing.
+                    As a software engineer on the <em>Center of Excellence</em> team, I developed proof of concepts to evaluate new{" "}
+                    tech stacks for legacy and greenfield applications. I've worked with <a href="https://ethereum.org/en/">Ethereum</a> to manage Alternative Investments,{" "}
+                    <a href="https://kafka.apache.org/">Kafka</a> to rebuild our core brokerage platform, and frontend frameworks to create dashboards for executives.
                 </React.Fragment>
             }
             fluid={slideImages.imgFidelity.childImageSharp.fluid}
             overlayColor="lime.dark"
             highlightColor="aloe.base"
-            isExpanded
-            isColorful
+            isExpanded={false}
+            isColorful={true}
             imagePosition="50% 50%"
-            button={{ text: "Get started", href: "/readme" }}
         />
 
         {/**
@@ -144,7 +144,7 @@ const Slides: React.FC<SlidesProps> = (props) => {
         highlightColor="crystal.base"
         isExpanded={false}
         imagePosition="80% 0%"
-        button={{ text: "Theme Preview", href: "/theme-preview" }}
+        button={{ text: "Open Parapet App", href: "https://parapet.deepsheth.com" }}
       />
 
       {/**
@@ -152,18 +152,23 @@ const Slides: React.FC<SlidesProps> = (props) => {
        */}
       <Slide
         id="lehigh"
-        title="What if you replaced the noise of becoming with the silence of being?"
+        title="I come ready to tackle fintech challenges with my undergraduate experience."
         description={
           <React.Fragment>
-            Emma Woodhouse, handsome, clever, and rich, with a comfortable home and happy disposition, seemed to unite
-            some of the best <em>blessings of existence</em>; and had lived nearly{" "}
-            <a href="https://www.gutenberg.org/files/158/158-h/158-h.htm#link2HCH0001">twenty-one years</a> in the world
-            with very little to distress or vex her.
+              <p>
+                  At Lehigh, I <em>consistently won</em> <a href="https://thebrownandwhite.com/2015/04/27/coding-house-hackathon/">hackathons</a>{" "}
+            and <a href="https://www2.lehigh.edu/news/app-inventors-display-practicality-creativity">coding competitions</a>. Along the way, I{" "}
+            worked on many side projects with roommates.
+              </p>
+              <p>
+                  I graduated from Lehigh's <a href="https://engineering.lehigh.edu/cse/academics/undergraduate/computer-science-business-bs">Computer Science and Business program</a>, where I was a teaching assistant for two courses
+                  and a <em>founding member</em> of the <a href="http://www.lehighfintech.org/">Lehigh Fintech Group</a>.
+              </p>
           </React.Fragment>
         }
         fluid={slideImages.imgLehigh.childImageSharp.fluid}
-        overlayColor="#855524"
-        highlightColor="#c4731f"
+        overlayColor="#69431d"
+        highlightColor="mango.base"
         isColorful
         isExpanded
         hasDistinctBorder
@@ -174,22 +179,21 @@ const Slides: React.FC<SlidesProps> = (props) => {
          */}
         <Slide
             id="dots"
-            title="What if you replaced the noise of becoming with the silence of being?"
+            title="As a fun project, I created a web app to play a game of connect-the-dots."
             description={
                 <React.Fragment>
-                    Emma Woodhouse, handsome, clever, and rich, with a comfortable home and happy disposition, seemed to unite
-                    some of the best <em>blessings of existence</em>; and had lived nearly{" "}
-                    <a href="https://www.gutenberg.org/files/158/158-h/158-h.htm#link2HCH0001">twenty-one years</a> in the world
-                    with very little to distress or vex her.
+                    I was inspired by the <a href="https://www.dots.co/">Dots mobile</a> game and recreated a cross-platform version using HTML5 canvas.{" "}
+                    <em>My top score is 573</em> — shouldn't be too hard to top. 😛
                 </React.Fragment>
             }
             fluid={slideImages.imgDots.childImageSharp.fluid}
-            overlayColor="mango.base"
-            highlightColor="mediumorchid"
+            overlayColor="saffron.base"
+            highlightColor="saffron.base"
             isExpanded
+            // isColorful
             hasDistinctBorder
         />
-        
+
       {/**
        * BLOG
        */}
