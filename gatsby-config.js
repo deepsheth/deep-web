@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/deep-web",
+  pathPrefix: "/",
 
   // TODO - Update site metadata to reflect your site's info
   siteMetadata: {
