@@ -9,12 +9,7 @@ import SpotifyPlayer from "./SpotifyPlayer";
 
 Here will a React component go:
 
-<SpotifyPlayer
-  uri="spotify:user:bbcamerica:playlist:3w18u69NplCpXVG4fQG726"
-  size="large"
-  theme="black"
-  view="list"
-/>
+<SpotifyPlayer uri="spotify:user:bbcamerica:playlist:3w18u69NplCpXVG4fQG726" size="large" theme="black" view="list" />
 
 Here will a live code example go:
 
@@ -195,11 +190,7 @@ const Blog = ({ posts }: PostsProps) => {
         <Heading variant="h2" as="h2">
           Blog
         </Heading>
-        <Styled.a
-          as={Link}
-          sx={{ variant: `links.secondary` }}
-          to={`/${basePath}/${tagsPath}`.replace(/\/\/+/g, `/`)}
-        >
+        <Styled.a as={Link} sx={{ variant: `links.secondary` }} to={`/${basePath}/${tagsPath}`.replace(/\/\/+/g, `/`)}>
           View all tags
         </Styled.a>
       </Flex>

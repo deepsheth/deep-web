@@ -60,7 +60,7 @@ module.exports = {
       options: {
         typekit: {
           id: "gul0ccw",
-        }
+        },
       },
     },
   ],
