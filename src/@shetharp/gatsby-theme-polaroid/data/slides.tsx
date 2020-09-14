@@ -84,12 +84,17 @@ const Slides: React.FC<SlidesProps> = (props) => {
           Unsplash: https://unsplash.com/photos/Tl8mDaue_II */}
       <Slide
         id="bread"
-        title="Bread"
+        title="At Bread I'm building software products to expand payment options across the internet."
         description={
           <React.Fragment>
-            I went down yesterday to the <a href="#!">Piraeus with Glaucon</a> the son of Ariston, that I might offer up{" "}
-            my prayers to the goddess (Bendis, the <Link to="#">Thracian Artemis.</Link>); and also because{" "}
-            <em>I wanted to see</em> in what manner they would celebrate the festival, which was a new thing.
+              <p>
+            I'm a product-focused engineer who works heavily on our frontend. I focus on a mix of greenfield and growth work. I've
+            pioneered our new design system, launched a new customer portal, and improved app performance to prepare us for unprecedented scale.
+              </p>
+              <p>As
+            part of the Growth team, I run data-driven A/B tests to lift our checkout conversions and improve the
+            overall customer journey.
+              </p>
           </React.Fragment>
         }
         fluid={slideImages.imgBread.childImageSharp.fluid}
@@ -98,7 +103,7 @@ const Slides: React.FC<SlidesProps> = (props) => {
         isExpanded
         isColorful
         imagePosition="50% 50%"
-        button={{ text: "Contact Me", href: "/readme" }}
+        button={{ text: "Contact Me", href: "/contact" }}
       />
 
       <Slide
@@ -128,13 +133,13 @@ const Slides: React.FC<SlidesProps> = (props) => {
             Flickr: https://flic.kr/p/jUbvK*/}
       <Slide
         id="parapet"
-        title="I built a database to discover vacant apartments in Jersey City"
+        title="I built a database to discover vacant apartments in Jersey City."
         description={
           <React.Fragment>
             <p>
-              As someone frustrated with trying to find broker-free apartments around NYC, I decided to make the process easier.{" "}
-              <em>I launched Parapet</em> to make apartment hunting a data-driven decision. I worked across the stack,{" "}
-              from the backend webscraper to the React frontend.
+              As someone frustrated with trying to find broker-free apartments around NYC, I decided to make the process
+              easier. <em>I launched Parapet</em> to make apartment hunting a data-driven decision. I worked across the
+              stack, from the backend webscraper to the React frontend.
             </p>
           </React.Fragment>
         }
@@ -198,7 +203,7 @@ const Slides: React.FC<SlidesProps> = (props) => {
         isExpanded
         // isColorful
         hasDistinctBorder
-        button={{ text: "Play Dots Game", href: "https://deepsheth.github.io/connect-the-dots-game/"}}
+        button={{ text: "Play Dots Game", href: "https://deepsheth.github.io/connect-the-dots-game/" }}
       />
 
       {/**
