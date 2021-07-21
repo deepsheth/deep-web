@@ -147,7 +147,7 @@ const Slides: React.FC<SlidesProps> = (props) => {
         highlightColor="crystal.base"
         isExpanded={false}
         imagePosition="80% 0%"
-        button={{ text: "Open Parapet App", href: "https://parapet.deepsheth.com" }}
+        button={{ text: "Open Parapet App", href: "https://parapet.cc/" }}
       />
 
       {/**
