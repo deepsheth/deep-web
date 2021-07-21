@@ -87,13 +87,13 @@ const Slides: React.FC<SlidesProps> = (props) => {
         title="At Bread I'm building software products to expand payment options across the internet."
         description={
           <React.Fragment>
-              <p>
-            I'm a product-focused engineer who works heavily on our frontend. I focus on a mix of greenfield and growth work. I've
-            pioneered our new design system, launched a new customer portal, and improved app performance to prepare us for unprecedented scale.
-              </p>
-              <p>As part of the Growth team, I run data-driven A/B tests to lift our checkout conversions and improve the
-            overall customer journey.
-              </p>
+            <p>
+              I'm a product-focused engineer who works heavily on our frontend. I focus on a mix of greenfield and growth work. I've
+              pioneered our new design system, launched a new customer portal, and improved app performance to prepare us for unprecedented scale.
+            </p>
+            <p>As part of the Growth team, I run data-driven A/B tests to lift our checkout conversions and improve the
+              overall customer journey.
+            </p>
           </React.Fragment>
         }
         fluid={slideImages.imgBread.childImageSharp.fluid}
